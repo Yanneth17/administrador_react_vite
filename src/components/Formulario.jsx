@@ -83,11 +83,11 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
 
   return (
     <div className="md:w-1/2 lg:w-2/5 mx-5">
-        <h2 className="font-black text-3xl text-center">Seguimiento de pacientes</h2>
+        <h2 className="font-black text-3xl text-center">Registro las Mascotas</h2>
 
         <p className="text-lg mt-5 text-center mb-10"> 
-          Añade Pacientes y {' '}
-        <span className="text-indigo-500 font-bold">Administralos</span>
+          y {' '}
+        <span className="text-lime-500 font-bold">Administra sus Sintomas</span>
         </p>
 
         <form 
@@ -123,8 +123,8 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
            </div>
 
            <div className="mb-5">
-              <label htmlFor="alta" className="block text-gray-600 uppercase font-bold">Alta:</label>
-              <input id="alta" type="date" className="border-2 w-full p-2 mt-2 rounded-md placeholder-gray-400"
+              <label htmlFor="fecha" className="block text-gray-600 uppercase font-bold">Fecha:</label>
+              <input id="fecha" type="date" className="border-2 w-full p-2 mt-2 rounded-md placeholder-gray-400"
               value={fecha} onChange={(e) => setFecha(e.target.value)} 
               />
            </div>
@@ -138,7 +138,7 @@ const Formulario = ({pacientes, setPacientes, paciente, setPaciente}) => {
            </div>
 
           <input type="submit" 
-               className="bg-indigo-600 w-full p-3 text-white uppercase font-bold cursor-pointer transition-all hover:bg-indigo-700" 
+               className="bg-lime-600 w-full p-3 text-white uppercase font-bold cursor-pointer transition-all hover:bg-lime-700" 
                // Un if ternario por que despues del return, no se puede utilizar if
                value= {paciente.id ? 'Editar Paciente' : 'Agregar Paciente'} />
         </form>

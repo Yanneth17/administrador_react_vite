@@ -16,11 +16,11 @@ const ListadoPacientes = ({pacientes, setPaciente, eliminarPaciente}) => {
         {pacientes && pacientes.length ? (
 
           <>
-              <h2 className="font-black text-3xl text-center">Listado Pacientes</h2>
+              <h2 className="font-black text-3xl text-center">Listado de Mascotas</h2>
                         
               <p className="text-xl mt-5 text-center mb-10"> 
-                Administra tus {' '}
-                <span className="text-indigo-600 font-bold"> Pacientes y Citas </span>
+                Administra los Sintomas de  {' '}
+                <span className="text-lime-600 font-bold"> las Mascotas</span>
               </p>
 
               {pacientes.map( paciente => (
@@ -36,10 +36,10 @@ const ListadoPacientes = ({pacientes, setPaciente, eliminarPaciente}) => {
 
         ) : (
           <>
-               <h2 className="font-black text-3xl text-center">No hay Pacientes</h2>
+               <h2 className="font-black text-3xl text-center">No hay Pacientes Registrados</h2>
                <p className="text-xl mt-5 text-center mb-10"> 
-                        Para Administrar {' '}
-                    <span className="text-indigo-600 font-bold"> Registra Pacientes </span>
+                        Para Administrar sus Sintomas {' '}
+                    <span className="text-lime-600 font-bold"> Registra las Mascotas</span>
                 </p>               
           </>
         )}

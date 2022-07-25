@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.jsx"],
+  // Eliminar ./ de Index para ejecutar build
+  content: ["index.html", "./src/**/*.jsx"],
   theme: {
     extend: {},
   },

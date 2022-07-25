@@ -13,7 +13,7 @@ const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
     const handleEliminar = () => {
         const respuesta = confirm('¿Deseas Eliminar este Paciente?');
         if (respuesta) {
-            eliminarPaciente(id)
+            eliminarPaciente
         }
     }
 
@@ -44,7 +44,7 @@ const Paciente = ({paciente, setPaciente, eliminarPaciente}) => {
             <div className="flex justify-between mt-10">
 
                 <button type="button"
-                className="py-2 px-10 bg-indigo-600 hover:bg-indigo-700 text-white font-bold uppercase rounded-lg"
+                className="py-2 px-10 bg-lime-600 hover:bg-lime-700 text-white font-bold uppercase rounded-lg"
                 // pasar argumento a una función con un callback, por que le estamos pasando un argumento
                 onClick={() => setPaciente(paciente)}
                 >Editar</button>
